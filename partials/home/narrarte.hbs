@@ -1,0 +1,34 @@
+<div class="narrarte w-9/10 s:w-4/5 md:w-9/10 pcs:w-3/5 m-auto pt-12 clear-both">
+    {{#get "posts" limit="1"  include="authors" filter="tags:{{tag}}"}}
+        {{#foreach posts visibility="all"}}
+            <div class="w-full h-full">
+                 <div class="w-full"><span class="text-5xl s:text-6xl font-karma-bold md:text-7xl ">Narrarte.tv</span></div>
+                 <div class="w-full"><span class="text-3xl s:text-4xl md:text-4xl uppercase font-karma-light">{{title}}</span></div>
+            </div>
+            <div class="w-full md:h-72 relative">
+                <div class="w-full md:w-1/2 md:absolute md:right-0 h-full">
+                    <div class="md:absolute md:bottom-0 w-full md:w-2/3 md:right-0 relative leading-8">
+                        <span class="font-karma-light text-sm xs:text-base s:text-lg">{{excerpt}}</span>
+                        <div class="hidden md:block pt-4">
+                            {{> button class="block" url="{{@site.url}}/puro-cuento" title="Seguir leyendo" icon_src="assets/images/icons/svg/plus-white.svg"}}
+                        </div>  
+                    </div> 
+                </div>
+                <div class="w-full h-28 pt-8 md:w-1/3 md:float-left clear-both md:h-full">
+                    <div class="md:absolute md:bottom-0 md:left-0">
+                        {{#if authors}}
+                            {{> author-profile-image authors=authors}}
+                        {{/if}}
+                    </div>
+                </div> 
+                <div class="hidden md:block clear-both w-full"></div>
+                 <div class="md:hidden pt-2 l:pt-8 m:pt-12">
+                    {{> button class="m-auto block" url="{{@site.url}}/puro-cuento" title="Seguir leyendo" icon_src="assets/images/icons/svg/plus-white.svg"}}
+                </div>     
+            </div>
+            <div class="pt-16 md:pt-28 w-4/5 m:w-full m-auto">
+                <hr>
+            </div>
+        {{/foreach}}
+    {{/get}}
+</div>

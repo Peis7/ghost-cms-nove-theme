@@ -1,0 +1,55 @@
+{
+    "name": "nova",
+    "description": "Moder Design",
+    "version": "0.5.0",
+    "keywords": [
+        "ghost-them"
+    ],
+    "engines": {
+        "ghost-api": "v3"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "pedrocabrera",
+        "email": "ing.cabrera.acosta@gmail.com"
+    },
+    "screenshots": {
+        "desktop": "assets/screenshot-desktop.jpg",
+        "mobile": "assets/screenshot-mobile.jpg"
+    },
+    "config": {
+        "posts_per_page": 5,
+        "image_sizes": {}
+    },
+    "dependencies": {
+        "@tailwindcss/forms": "^0.3.4",
+        "@tailwindcss/typography": "^0.4.1",
+        "beeper": "^3.0.0",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-cssnano": "^2.1.3",
+        "gulp-livereload": "^4.0.2",
+        "gulp-postcss": "^9.0.1",
+        "gulp-zip": "^5.1.0",
+        "i": "^0.3.7",
+        "npm": "^7.24.1",
+        "postcss-easy-import": "^3.0.0",
+        "progressbar.js": "^1.1.0"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.3.6",
+        "gulp": "^4.0.2",
+        "gulp-uglify": "^3.0.2",
+        "postcss": "^8.3.8",
+        "pump": "^3.0.0",
+        "tailwindcss": "^2.2.16"
+    },
+    "scripts": {
+        "dev": "gulp",
+        "zip": "gulp zip",
+        "test": "gscan .",
+        "test:ci": "gscan --fatal --verbose .",
+        "pretest": "gulp build",
+        "preship": "yarn test"
+    }
+}

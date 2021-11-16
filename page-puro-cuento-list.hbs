@@ -1,0 +1,9 @@
+{{!< default}}
+
+<div class="clear-both">
+    {{#get "posts" limit="12"  include="authors" filter="tags:[puro-cuento,post]"}}
+        {{#foreach posts visibility="all"}}
+            <div>Test</div>
+        {{/foreach}}
+    {{/get}}
+</div>

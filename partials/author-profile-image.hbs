@@ -1,0 +1,10 @@
+{{#foreach authors}}
+        <div class="w-20 l:w-24 m:w-28 block pr-4 float-left md:float-none">
+            {{#if profile_image}}
+                <img class="rounded-full" src="{{img_url profile_image}}" alt="{{name}}'s Picture" />
+            {{/if}}
+        </div>
+        <div class="text-xs xs:text-sm s:text-base l:text-lg m:text-xl pt-8 flex">
+            <span>{{name}} - Directora</span>
+        </div>
+{{/foreach}}

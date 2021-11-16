@@ -1,0 +1,82 @@
+{{!< default}}
+<div class="las-lobas">
+    <div class="section-header w-full mb-12 relative min-h-24rem s:min-h-42rem md:min-h-48rem">
+        <div class="inner min-h-inherit">
+            <div class="featured-image-wrap min-h-inherit h-full">
+                <div class="featured-image min-h-inherit h-full">
+                    <a href="" title="" class="block min-h-inherit"> 
+                        <img class="min-h-inherit w-full h-full object-cover" src="{{@site.url}}/assets/images/general/las-lobas-top-section.jpg" alt=""/>
+                    </a>
+                </div>
+                <div class="overlay w-9/10 absolute 0 bottom-6 s:bottom-12 right-0 md:left-unset md:bottom-12 md:right-0 md:bottom-12 bg-white px-4 pb-4 xs:px-8 xs:pb-8 s:pt-8 md:p-8 md:max-w-1/2">
+                    <div class="content-container relative">
+                        
+                        <div class="col-lg-6 w-full xs:w-2/3 s:w-4/5 md:w-full flex items-center">
+                            <div class="w-1/3 md:w-1/5 block">
+                                {{> icons/lobaauyando width=82 height=95 classes="w-12 xs:w-16 s:w-20 block"}}
+                            </div>
+                            <div class="w-2/3 md:w-4/5">
+                                <h2 class="title font-karma-bold text-3xl s:text-4xl m:text-5xl text-primary-black md:text-5xl">Las Lobas</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 excert">
+                                <div class="excerpt font-karma-light text-xs s:text-lg excerpt-content">
+                                        Nos transformamos en un movimiento de narración oral itinerante que busca en cada país reunir un grupo de mujeres narradoras dispuestas a compartir el escenario y contar historias de mujeres por mujeres como protagonistas, promoviendo consecuentemente una sororidad activa y permanente en cada país donde se realiza el Aullido. 
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="posts w-full md:w-4/5 md:m-auto md:my-12">
+        <!--2021-->
+        <div class="w-full clear-both pb-6 teta:pt-20 md:pb-0">
+            <div class="w-full text-left md:text-center pb-6 pt-6 md:pt-0 md:pb-0 md:w-1/5 inline-block float-left">
+                <span class="pl-6 md:pl-0 text-4xl s:text-5xl">2021</span>
+            </div>
+            <div class="w-full md:w-4/5 inline-block post-list-2021">
+                <div class="">
+                    <div class="owl-carousel owl-theme owl-carrousel-2021">
+                        {{> las-lobas/post-per-year filter="tag:post+tag:hash-2021"}}
+                    </div>
+                </div>
+            </div>
+            <div class="border-b-1 w-9/12 mb-12 m-auto">
+                <hr>
+            </div>
+        </div>
+        <!--2020-->
+        <div class="w-full clear-both pb-6 teta:pt-20  md:pb-0">
+            <div class="w-full text-left md:text-center pb-6 md:pb-0 pt-6 md:pt-0 md:w-1/5 inline-block float-left">
+                <span class="pl-6 md:pl-0 text-4xl s:text-5xl">2020</span>
+            </div>
+            <div class="w-full md:w-4/5 inline-block post-list-2020">
+                <div class="">
+                    <div class="owl-carousel owl-theme owl-carrousel-2020">
+                        {{> las-lobas/post-per-year filter="tag:post+tag:hash-2020"}}
+                    </div>
+                </div>
+            </div>
+            <div class="border-b-1 w-9/12 mb-12 m-auto">
+                <hr>
+            </div>
+        </div>
+        <!--2019-->
+        <div class="w-full clear-both pb-6 teta:pt-20  md:pb-0">
+            <div class="w-full text-left md:text-center pb-6 md:pb-0 md:w-1/5 inline-block float-left">
+                <span class="pl-6 md:pl-0 text-4xl s:text-5xl">2019</span>
+            </div>
+            <div class="w-full md:w-4/5 inline-block post-list-2019">
+                <div class="">
+                    <div class="owl-carousel owl-theme owl-carrousel-2019">
+                        {{> las-lobas/post-per-year filter="tag:post+tag:hash-2019"}}
+                    </div>
+                </div>
+            </div>
+             <div class="border-b-1 w-9/12 mb-12 m-auto">
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>

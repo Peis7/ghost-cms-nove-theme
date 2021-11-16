@@ -1,0 +1,40 @@
+<div class="featured-posts-section l:min-h-38rem w-full h-110 relative">
+    <div class="h-full w-full">
+        {{#get "posts" limit="1" include="tags,authors" filter="featured:true"}}
+                {{#foreach posts visibility="all"}}
+                    <div class="large-post post-wrap h-full {{post_class}}">
+                            <div class="featured-image-wrap h-full">
+                                <div class="featured-image h-full">
+                                    <!--<<a href="{{url}}" title="{{{title}}}">-->
+                                        <img class="w-full h-full object-cover" srcset="{{img_url feature_image size="m"}} 600w,
+                                                {{img_url feature_image size="l"}} 1000w"
+                                                    sizes="(min-width: 768px) and (max-width: 991px) 1000px, 600px"
+                                                        src="{{img_url feature_image size="m"}}"
+                                                            alt="{{title}}"
+                                        />
+                                    <!--</a>-->
+                                </div>
+                                <div class="overlay w-9/10 absolute left-0 md:right-0 md:left-unset bottom-12 md:right-0 md:bottom-12 bg-white p-8 md:max-w-1/2">
+                                    <a class="link" href="{{url}}"></a>
+                                    <div class="content-container">
+                                        <time class="date text-base font-karma-light text-primary-gray" datetime="{{date format="YYYY-MM-DD"}}" title="{{date format="DD MMMM, YYYY"}}">{{date format="MMMM DD, YYYY"}}</time>
+                                        <div class="col-lg-6 tag-title">
+                                                <h2 class="title font-karma-bold text-3xl s:text-4xl m:text-5xl text-primary-black md:text-5xl">{{title}}</h2>
+                                        </div>
+                                        <div class="col-lg-6 excert">
+                                                <div class="excerpt font-karma-light text-base s:text-lg excerpt-content">
+                                                    {{excerpt}}
+                                                </div>
+                                        </div>
+                                        <div class="bg-black w-20 h-20 items-center flex rounded-full">
+                                            {{> icons/play width="23" height="41" classes="play m-auto cursor-pointer" viewbox="0 0 53 71" fill="#fff"}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                {{/foreach}}
+            {{/get}}
+        </div>
+    </div>
+</div>

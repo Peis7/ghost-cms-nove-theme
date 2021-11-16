@@ -1,0 +1,34 @@
+<section class="post-full-content teta:w-2/3 teta:m-auto">
+    <form id="contact-form" action="https://formspree.io/f/xnqlyjbe" method="post">
+        <span class="uppercase font-karma-light pb-4 l:pb-8 text-white text-4xl s:text-5xl text-center block">contacto</span>
+        <input class="w-full font-karma-light focus:font-karma-bold bg-black text-white placeholder-white border-0 border-b-2 border-white focus:border-primary-yellow focus:ring-black focus:border-b-4 mb-4" type="text" name="name" id="full-name" placeholder="Nombre" required>
+        <input class="w-full font-karma-light bg-black text-white placeholder-white border-0 border-b-2 border-white focus:border-primary-yellow focus:ring-black focus:border-b-4 mb-4"type="email" name="_replyto" id="email-address" placeholder="Email" required>
+        <textarea class="w-full font-karma-light bg-black text-white placeholder-white border-0 border-b-2 border-white focus:border-primary-yellow focus:ring-black focus:border-b-4 mb-4" rows="1" name="message" id="message" placeholder="Mensaje" required></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        <input class="block cursor-pointer mx-auto mt-4 bg-black border-white border-2 py-6 l:mt-8 px-12 s:px-20 text-white rounded-full" type="submit" value="Enviar">
+        <p class="text-green-400 text-center pt-4 karma-bold" id="contact-form-status"></p>
+    </form>
+    <script>
+        var form = document.getElementById("contact-form");
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("contact-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                status.innerHTML = "Gracias por tu mensaje!";
+                setTimeout(function(){ status.innerHTML=""; }, 3000);
+                form.reset()
+            }).catch(error => {
+                status.innerHTML = "Oops! tuvimos problemas enviando tu formulario"
+                setTimeout(function(){ status.innerHTML=""; }, 3000);
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
+</section>

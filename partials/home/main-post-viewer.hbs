@@ -1,0 +1,14 @@
+<div class="hidden main-post-viewer bg-black z-50 w-full h-screen fixed left-0 top-0">
+    <div class="h-full m-auto flex items-center">
+        <div class="m-auto">
+            {{#get "posts" limit="1" include="tags,authors" filter="primary_tag:current-event"}}
+                {{#foreach posts visibility="all"}}
+                    {{content}}
+                {{/foreach}}
+            {{/get}}
+        </div>
+    </div>
+     <div class="absolute right-12 top-12">
+         {{> icons/close width=20 height=20 fill="#FFF" class="main-event-close cursor-pointer"}}
+    </div>
+</div>  

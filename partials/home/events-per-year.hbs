@@ -1,0 +1,27 @@
+<div class="w-full m-auto post-per-year relativem md:w-9/10 pcs:w-4/5 pcs:pb-20 pt-12 clear-both">
+    <div class="md:p-2 pcs:p-12">
+            <div class="w-full md:w-1/4 md:float-left">
+                <div class="w-4/5 m-auto text-center">
+                    <span class=" text-2xl s:text-3xl l:text-4xl">Eventos Anteriores</span>
+                </div>
+                <div class="post-years mb-6 flex m-auto md:block text-lg l:text-2xl pt-4 w-9/10 font-karma-regular">
+                    <div  class="year font-karma-bold float-left m-auto md:w-full md:border-b-2 cursor-pointer md:mb-4 md:text-xl" year="2021"><span>2021</span></div>
+                    <div  class="year float-left m-auto md:w-full cursor-pointer md:mb-4 md:text-xl" year="2020"><span>2020</span></div>
+                    <div  class="year float-left m-auto md:w-full cursor-pointer md:mb-4 md:text-xl" year="2019"><span>2019</span></div>
+                    <div  class="year float-left m-auto md:w-full cursor-pointer md:mb-4 md:text-xl" year="2019"><span>2018</span></div>
+                    <div  class="year float-left m-auto md:w-full cursor-pointer md:mb-4 md:text-xl" year="2019"><span>2017</span></div>
+                </div>
+            </div>
+            <div class="w-full md:w-3/4 inline-block post-groups">
+                <div class="posts-2021 p-item">
+                    {{> home/event-per-year-single-post tag="hash-2021"}}
+                </div>
+                <div class="posts-2020 p-item hidden">
+                    {{> home/event-per-year-single-post tag="hash-2020" classes="hidden"}}
+                </div>
+                <div class="posts-2019 p-item hidden">
+                    {{> home/event-per-year-single-post tag="hash-2019" classes="hidden"}}
+                </div>
+            </div>
+        </div>
+    </div>

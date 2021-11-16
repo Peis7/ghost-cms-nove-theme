@@ -1,0 +1,51 @@
+<div class="player z-50 hidden fixed  h-48 s:h-40 m:h-56 bg-white bottom-0 w-full shadow-2xl teta:w-9/10 teta:left-5% teta:bottom-2% teta:h-32">
+    <audio id="audio" index="">
+        <source src="" type="audio/mpeg">
+    </audio>
+    <div class="m-auto pt-4 s:p-8 teta:p-2">
+        <div class="bg-white rounded-full relative w-9/10 m-auto teta:flex teta:items-center">
+            <div class="w-full py-2 flex items-center teta:w-1/4 teta:float-left">
+                <div class="prev cursor-pointer w-1/3 teta:w-1/5">
+                    {{> icons/prev width="26" height="13" classes="block m-auto float-right" viewbox="0 0 53 71" fill="none"}}
+                </div>
+                <div class="w-1/3 xs:w-1/5 teta:w-3/5 cover_image rounded-full">
+                        <div class="rounded-full w-16 h-16 m:w-24 m:h-24 teta:w-24 teta:h-24 block m-auto border">
+                            <div class="rounded-full relative w-96% h-96% ml-2% mt-2%">
+                                <img class="rounded-full w-full h-full" src=""/>
+                                <div class="player-i w-1/3  flex top-1/3 left-1/3 absolute h-1/3 bg-white rounded-full">
+                                    <div class="relative m-auto block w-full h-full">
+                                        {{> icons/play width="33" height="51" audio_id="cuento-audio" classes="play w-1/3 h-full m-auto cursor-pointer" viewbox="0 0 53 71" fill="#1F1F1F"}}
+                                        {{> icons/pause width="33" height="51" classes="pause hidden w-1/3 h-full m-auto cursor-pointer" viewbox="0 0 53 71" fill="none"}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="next cursor-pointer xw-1/3 teta:w-1/5">
+                    {{> icons/next width="26" height="13" classes="block m-auto float-left" viewbox="0 0 53 71" fill="none"}}
+                </div>
+                <div class="w-1/3 xs:w-3/5 teta:hidden">
+                    <span class="author block text-sm">
+                    </span>
+                    <span class="title font-karma-bold block text-xs font-karma-light">
+                    </span>
+                </div>
+                <div class="relative block w-1/3 xs:w-3/4 teta:rounded-full teta:bg-white teta:w-8 teta:h-8 teta:hidden">
+                    {{> icons/play width="33" height="51" classes="play hidden w-1/3 h-full m-auto cursor-pointer" viewbox="0 0 53 71" fill="#1F1F1F"}}
+                    {{> icons/pause width="33" height="51" classes="pause w-1/3 h-full m-auto cursor-pointer" viewbox="0 0 53 71" fill="none"}}
+                </div>
+            </div>
+            <div class="py-2 w-full teta:w-4/5 teta:float-left">
+                 <div class="w-full">
+                     <div class="hidden teta:block teta:flex teta:items-center teta:w-4/5 teta:float-left">
+                        <span class="author block text-sm"></span>
+                        <span class="block text-xs">&nbsp;-&nbsp;</span>
+                        <span class="title font-karma-bold block text-xs font-karma-light"></span>
+                     </div>
+                     <span class="time block text-center text-base teta:text-right teta:w-1/5 teta:float-left">00:00</span>
+                </div>
+                <div id="player-bar-indicator" class="w-full m-auto"></div>
+            </div>
+        </div>
+    </div>
+</div>

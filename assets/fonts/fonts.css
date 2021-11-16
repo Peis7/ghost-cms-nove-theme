@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'KohSantepheap-Bold';
+    font-style: bold;
+    font-weight: 300;
+    font-display: swap;
+    src: url('koh_santepheat/KohSantepheap-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'KohSantepheap-Light';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('koh_santepheat/KohSantepheap-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'KohSantepheap-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('koh_santepheat/KohSantepheap-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'KohSantepheap-Thin';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('koh_santepheat/KohSantepheap-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Karma-Bold';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('karma/Karma-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Karma-Light';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('karma/Karma-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Karma-Medium';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('karma/Karma-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Karma-Regular';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('karma/Karma-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Karma-SemiBold';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('karma/Karma-SemiBold.ttf') format('truetype');
+}

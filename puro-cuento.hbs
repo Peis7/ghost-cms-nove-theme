@@ -1,0 +1,30 @@
+{{!< default}}
+<div class="puro-cuento-list mt-12 md:w-9/10 md:m-auto">
+    <div class="section-header inline-block w-full relative mb-12">
+        <div class="inner teta:flex">
+            <div class="w-full md:w-1/3 float-left flex items-center">
+                <div class="w-9/10 m-auto flex items-center">
+                    <div class="w-1/3 m-auto">
+                        {{> icons/microphone width=159 height=167 classes="w-full xs:h-28 s:h-36 m:h-44 "}}
+                    </div>
+                    <div class="w-2/3 m-auto">
+                        <span class="font-karma-bold text-5xl s:text-6xl m:text-7xl md:text-5xl capitalize">puro<br>cuento</span>
+                        <img src=""/>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full pt-12 md:w-2/3 float-left">
+                <div class="font-karma-light text-left md:text-right px-6 md:px-20 md:pr-0">
+                    <span>Es una propuesta en formato de capsulas audiofónicas con el propósito de presentar a través de un espacio radial, en un aula de clases o en un círculo de literatura una colección de micro-cuentos que ejemplifican la tradición oral. </span><br>
+                    <span>El cuento ha sido declarado como Patrimonio Oral e Inmaterial de la Humanidad por la UNESCO “al ser el vector esencial de trasmisión de conocimientos, de valores culturales y sociales, y de la memoria colectiva, la tradición oral constituye una de las principales formas de educación de las sociedades humanas, y desempeña un papel primordial en la vitalidad de las culturas.” </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary-gray">
+        <div class="posts-container related-posts z-20">
+            {{> puro-cuento/post-per-year filter="tag:puro-cuento+tag:post"}}
+        </div>
+    </div>
+    {{> player}}
+</div>

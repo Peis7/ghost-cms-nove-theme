@@ -1,0 +1,34 @@
+
+{{#get "posts" limit="all"  include="authors" filter="{{filter}}"}}
+    {{#foreach posts visibility="all"}}
+        <div class="cuento r-post z-30 tiny:px-0  xs:even:pr-0 xs:odd:pl-0  col-lg-8 mb-12 large-post post-wrap {{post_class}} {{classes}} w-full xs:w-1/2 md:w-1/3 relative float-left md:even:pr-2 md:odd:pl-2 md:p-2" index="{{@number}}" title="{{title}}" image="{{img_url feature_image}}" audio_id="audio-{{slug}}" audio_url="{{@site.url}}/assets/audios/puro-cuento/{{slug}}.mp3">
+                <div class="featured-image-wrap relative">
+                    <div class="featured-image">
+                        <a href="{{url}}" title="{{{title}}}">
+                            <img class="min-h-14rem l:min-h-18rem w-full max-h-56 object-cover" srcset="{{img_url feature_image size="m"}} 600w,
+                                    {{img_url feature_image size="l"}} 1000w"
+                            sizes="(min-width: 768px) and (max-width: 991px) 1000px, 600px"
+                            src="{{img_url feature_image size="m"}}"
+                            alt="{{title}}"
+                            />
+                        </a>
+                    </div>
+                    <div class="overlay absolute p-4 pxmin-w-7/10 min-h-1/5 right-0 -bottom-12 bg-white max-w-7/10 min-w-7/10">
+                        <a class="link" href="{{url}}"></a>
+                        <div class="content-container">
+                            {{#if authors}}
+                                {{#foreach authors}}
+                                        <div class="author font-karma-bold text-xs xs:text-sm s:text-base l:text-lg m:text-xl flex">
+                                            <span>{{name}}</span>
+                                        </div>
+                                {{/foreach}}
+                            {{/if}}
+                            <div class="col-lg-6 title">
+                                    <h2 class="title font-karma-bold text-sm font-karma-light">{{title}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    {{/foreach}}
+{{/get}}
