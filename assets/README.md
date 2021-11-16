@@ -1,1 +1,1 @@
-Ghost CMS Theme using Tailwind
+Ghost CMS Theme using Tailwind, Gulp, PostCSS
