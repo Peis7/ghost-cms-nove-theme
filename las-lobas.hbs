@@ -53,37 +53,37 @@
             </div>
 
             {{#get "posts" limit="all"  filter="{{filter}}"}}
-    {{#foreach posts visibility="all"}}
-        <div class="w-full col-lg-8 min-h-20rem min-h-24rem md:min-h-24rem large-post post-wrap {{post_class}} {{classes}} md:w-9/10 relative float-left md:px-1" post-index="{{@index}}">
-                <div class="featured-image-wrap relative">
-                    <div class="featured-image">
-                        <a href="{{url}}" title="{{{title}}}">
-                            <img class="w-full min-h-14rem max-h-56 max-h-2/3 h-full object-cover" srcset="{{img_url feature_image size="m"}} 600w,
-                                    {{img_url feature_image size="l"}} 1000w"
-                            sizes="(min-width: 768px) and (max-width: 991px) 1000px, 600px"
-                            src="{{img_url feature_image size="m"}}"
-                            alt="{{title}}"
-                            />
-                        </a>
-                    </div>
-                    <div class="overlay absolute w-4/5 p-8 min-w-7/10 min-h-3/5 right-0 top-5/7 bg-white">
-                        <a class="link" href="{{url}}"></a>
-                        <div class="content-container">
-                            <time class="date text-xs font-karma-bold text-primary-gray" datetime="{{date format="YYYY-MM-DD"}}" title="{{date format="DD MMMM, YYYY"}}">{{date format="MMMM DD, YYYY"}}</time>
-                             <div class="col-lg-6 tag-title">
-                                    <h2 class="title font-karma-bold text-sm xs:text-base l:text-xl text-primary-black s:text-base">{{title}}</h2>
-                            </div>
-                            <div class="col-lg-6 excert">
-                                    <div class="excerpt excerpt-content">
-                                        <span class="font-karma-light text-xs xs:text-sm l:text-lg md:text-base">{{excerpt words="9"}}</span>
+                {{#foreach posts visibility="all"}}
+                    <div class="w-full col-lg-8 min-h-20rem min-h-24rem md:min-h-24rem large-post post-wrap {{post_class}} {{classes}} md:w-9/10 relative float-left md:px-1" post-index="{{@index}}">
+                            <div class="featured-image-wrap relative">
+                                <div class="featured-image">
+                                    <a href="{{url}}" title="{{{title}}}">
+                                        <img class="w-full min-h-14rem max-h-56 max-h-2/3 h-full object-cover" srcset="{{img_url feature_image size="m"}} 600w,
+                                                {{img_url feature_image size="l"}} 1000w"
+                                        sizes="(min-width: 768px) and (max-width: 991px) 1000px, 600px"
+                                        src="{{img_url feature_image size="m"}}"
+                                        alt="{{title}}"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="overlay absolute w-4/5 p-8 min-w-7/10 min-h-3/5 right-0 top-5/7 bg-white">
+                                    <a class="link" href="{{url}}"></a>
+                                    <div class="content-container">
+                                        <time class="date text-xs font-karma-bold text-primary-gray" datetime="{{date format="YYYY-MM-DD"}}" title="{{date format="DD MMMM, YYYY"}}">{{date format="MMMM DD, YYYY"}}</time>
+                                        <div class="col-lg-6 tag-title">
+                                                <h2 class="title font-karma-bold text-sm xs:text-base l:text-xl text-primary-black s:text-base">{{title}}</h2>
+                                        </div>
+                                        <div class="col-lg-6 excert">
+                                                <div class="excerpt excerpt-content">
+                                                    <span class="font-karma-light text-xs xs:text-sm l:text-lg md:text-base">{{excerpt words="9"}}</span>
+                                                </div>
+                                        </div>
                                     </div>
+                                </div>
                             </div>
-                        </div>
                     </div>
-                </div>
-        </div>
-    {{/foreach}}
-{{/get}}
+                {{/foreach}}
+            {{/get}}
 
 
 
