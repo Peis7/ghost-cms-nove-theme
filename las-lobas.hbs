@@ -85,7 +85,7 @@
         </div>
         <div class="swiper mySwiper">
             <div style="display: flex;" class="swiper-wrapper">
-                {{#get "posts" limit="all"  filter="tag:post+tag:hash-2018"}}
+                {{#get "posts" limit="all"  filter="{{filter}}"}}
                     {{#foreach posts visibility="all"}}
                         <div class="swiper-slide">
                             <div class="w-full col-lg-8 min-h-20rem min-h-24rem md:min-h-24rem large-post post-wrap {{post_class}} {{classes}} md:w-9/10 relative float-left md:px-1" post-index="{{@index}}">
