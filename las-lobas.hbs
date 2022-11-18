@@ -86,7 +86,7 @@
         <div class="swiper mySwiper">
             <div style="display: flex;" class="swiper-wrapper">
                 {{#get "posts" limit="all"  filter="{{filter}}"}}
-                    {{#foreach posts visibility="all"}}
+                    {{#foreach posts tags}}
                         <div class="swiper-slide">
                             <div class="w-full col-lg-8 min-h-20rem min-h-24rem md:min-h-24rem large-post post-wrap {{post_class}} {{classes}} md:w-9/10 relative float-left md:px-1" post-index="{{@index}}">
                                 <div class="featured-image-wrap relative">
@@ -108,9 +108,9 @@
                                                     <h2 class="title font-karma-bold text-sm xs:text-base l:text-xl text-primary-black s:text-base">{{title}}</h2>
                                             </div>
                                             <div class="col-lg-6 excert">
-                                                    <div class="excerpt excerpt-content">
-                                                        <span class="font-karma-light text-xs xs:text-sm l:text-lg md:text-base">{{excerpt words="10"}}</span>
-                                                    </div>
+                                                <div class="excerpt excerpt-content">
+                                                    <span class="font-karma-light text-xs xs:text-sm l:text-lg md:text-base">{{excerpt words="10"}}</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
