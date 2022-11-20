@@ -76,7 +76,7 @@
                 <div class="">
                    <div class="swiper mySwiper">
                     <div style="display: flex;" class="swiper-wrapper">
-                        {{#get "posts" limit="all"  filter="tag:post+tag:hash-2019"}}
+                        {{#get "posts" limit="all"  filter="tags:2019"}}
                             {{#foreach posts visibility="all"}}
                                 <div class="swiper-slide">
                                     <div class="w-full col-lg-8 min-h-20rem min-h-24rem md:min-h-24rem large-post post-wrap {{post_class}} {{classes}} md:w-9/10 relative float-left md:px-1" post-index="{{@index}}">
@@ -100,7 +100,7 @@
                                                     </div>
                                                     <div class="col-lg-6 excert">
                                                         <div class="excerpt excerpt-content">
-                                                            <span class="font-karma-light text-xs xs:text-sm l:text-lg md:text-base">{{excerpt words="9"}}</span>
+                                                            <span class="font-karma-light text-xs xs:text-sm l:text-lg md:text-base">{{excerpt characters="20"}}</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -111,9 +111,6 @@
                             {{/foreach}}
                         {{/get}}
                     </div>
-
-
-             
                     <div class="swiper-button-next">next</div>
                     <div class="swiper-button-prev">prev</div>
                 </div>
@@ -131,7 +128,7 @@
             <div class="w-full md:w-4/5 inline-block post-list-2018">
                 <div class="swiper mySwiper">
                     <div style="display: flex;" class="swiper-wrapper">
-                        {{#get "posts" limit="all"  filter="tag:post+tag:hash-2018"}}
+                        {{#get "posts" limit="all"  filter="tags:2018"}}
                             {{#foreach posts visibility="all"}}
                                 <div class="swiper-slide">
                                     <div class="w-full col-lg-8 min-h-20rem min-h-24rem md:min-h-24rem large-post post-wrap {{post_class}} {{classes}} md:w-9/10 relative float-left md:px-1" post-index="{{@index}}">
