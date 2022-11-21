@@ -76,7 +76,8 @@
                 <div class="">
                    <div class="swiper mySwiper">
                     <div style="display: flex;" class="swiper-wrapper">
-                        {{#get "posts" limit="all"  filter="tags:2019"}}
+                         {{> las-lobas/post-per-year filter="tags:2019"}}
+                        {{!-- {{#get "posts" limit="all"  filter="tags:2019"}}
                             {{#foreach posts visibility="all"}}
                                 <div class="swiper-slide">
                                     <div class="w-full col-lg-8 min-h-20rem min-h-24rem md:min-h-24rem large-post post-wrap {{post_class}} {{classes}} md:w-9/10 relative float-left md:px-1" post-index="{{@index}}">
@@ -109,7 +110,7 @@
                                     </div>
                                 </div>
                             {{/foreach}}
-                        {{/get}}
+                        {{/get}} --}}
                     </div>
                     <div class="swiper-button-next">next</div>
                     <div class="swiper-button-prev">prev</div>
