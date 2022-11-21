@@ -38,7 +38,7 @@
             <div class="w-full md:w-4/5 inline-block post-list-2021">
                 <div class="">
                     <div class="owl-carousel owl-theme owl-carrousel-2021">
-                        
+                        {{> las-lobas/post-per-year filter="tag:post+tag:hash-2021"}}
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@
             <div class="w-full md:w-4/5 inline-block post-list-2020">
                 <div class="">
                     <div class="owl-carousel owl-theme owl-carrousel-2020">
-                       
+                        {{> las-lobas/post-per-year filter="tag:post+tag:hash-2020"}}
                     </div>
                 </div>
             </div>
@@ -73,7 +73,8 @@
                 <div class="">
                    <div class="swiper mySwiper">
                     <div style="display: flex;" class="swiper-wrapper">
-                         {{> las-lobas/post-per-year filter="tags:2019"}}
+                         {{> las-lobas/post-per-year filter="tag:post+tag:hash-2019"}}
+                         
                     </div>
                     <div class="swiper-button-next">next</div>
                     <div class="swiper-button-prev">prev</div>
