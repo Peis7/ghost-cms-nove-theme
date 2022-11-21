@@ -1,6 +1,10 @@
 
 {{#get "posts" limit="all"  filter="{{filter}}"}}
     {{#foreach posts visibility="all"}}
+      <div class="bg-black absolute right-6 md:right-0 -top-16 s:-top-20 teta:-top-6 w-32 h-12 rounded-full">
+                        <button type="button" role="presentation" class="swiper-button-prev owl-prev w-1/2 h-full"><span aria-label="Previous" class="text-white text-3xl">‹</span></button>
+                        <button type="button" role="presentation" class="swiper-button-next owl-next w-1/2 h-full"><span aria-label="Next" class="text-white text-3xl ">›</span></button>
+                    </div>
      <div class="swiper-slide">
           <div class="w-full col-lg-8 min-h-20rem min-h-24rem md:min-h-24rem large-post post-wrap {{post_class}} {{classes}} md:w-9/10 relative float-left md:px-1" post-index="{{@index}}">
             <div class="featured-image-wrap relative">
@@ -18,8 +22,8 @@
                     <a class="link" href="{{url}}"></a>
                     <div class="content-container">
                         <time class="date text-xs font-karma-bold text-primary-gray" datetime="{{date format="YYYY-MM-DD"}}" title="{{date format="DD MMMM, YYYY"}}">{{date format="MMMM DD, YYYY"}}</time>
-                            <div class="col-lg-6 tag-title">
-                                <h2 class="title font-karma-bold text-sm xs:text-base l:text-xl text-primary-black s:text-base">{{title}}</h2>
+                        <div class="col-lg-6 tag-title">
+                            <h2 class="title font-karma-bold text-sm xs:text-base l:text-xl text-primary-black s:text-base">{{title}}</h2>
                         </div>
                         <div class="col-lg-6 excert">
                             <div class="excerpt excerpt-content">
