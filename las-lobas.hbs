@@ -99,13 +99,18 @@
             </div>
             <div class="w-full md:w-4/5 inline-block post-list-2018">
                 <div class="swiper mySwiper">
+                    <div class="owl-nav bg-black float-right flex mb-2 right-6 md:right-0 -top-16 s:-top-20 teta:-top-6 w-32 h-12 rounded-full">
+                        <button class="swiper-button-prev owl-prev w-1/2 h-full">
+                            <span aria-label="Previous" class="text-white text-3xl">‹</span>
+                        </button>
+                        <button class="swiper-button-next owl-next w-1/2 h-full">
+                            <span aria-label="Next" class="text-white text-3xl">›</span>
+                        </button>
+                    </div> 
                     <div style="display: flex;" class="swiper-wrapper">
                         {{> las-lobas/post-per-year filter="tags:2018"}}
                     </div>
-                    <div>
-                        <button class="swiper-button-prev">prev</button>
-                        <button class="swiper-button-next">next</button>
-                    </div>
+                    
                    
                 </div>
             </div>
