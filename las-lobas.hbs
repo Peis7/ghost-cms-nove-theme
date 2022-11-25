@@ -84,6 +84,23 @@
                 <hr>
             </div>
         </div>
+        <!--2018-->
+        <div class="w-full clear-both pb-6 teta:pt-20  md:pb-0">
+            <div class="w-full text-left md:text-center pb-6 md:pb-0 md:w-1/5 inline-block float-left">
+                <span class="pl-6 md:pl-0 text-4xl s:text-5xl">2018</span>
+            </div>
+            <div class="w-full md:w-4/5 inline-block post-list-2018">
+                <div class="">
+                    <div class="owl-carousel owl-theme owl-carrousel-2018">
+                        {{> las-lobas/post-per-year filter="tag:post+tag:hash-2018"}}
+                    </div>
+                    
+                </div>
+            </div>
+             <div class="border-b-1 w-9/12 mb-12 m-auto">
+                <hr>
+            </div>
+        </div>
         <div class="swiper mySwiper">
             <div style="display: flex;" class="swiper-wrapper">
                 {{#get "posts" limit="all"  filter="{{filter}}"}}
