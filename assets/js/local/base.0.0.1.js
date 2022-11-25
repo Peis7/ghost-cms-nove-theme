@@ -45,7 +45,7 @@ function handle_show_right_header(){
     })
 }
 function generate_post_carrusels(){
-    jQuery.each([2021,2020,2019], function( index, value ) {
+    jQuery.each([2021,2020,2019,2018], function( index, value ) {
              jQuery('.las-lobas .owl-carrousel-'+value).owlCarousel({
                     loop:true,
                     margin:10,
