@@ -491,3 +491,47 @@ window.onload = function() {
 };
 
 
+function selectPostHome(y){
+    var select_post_2021 = document.getElementById("select-post-home-2021"); 
+    var select_post_2020 = document.getElementById("select-post-home-2020"); 
+    var select_post_2019 = document.getElementById("select-post-home-2019");
+    var select_post_2018 = document.getElementById("select-post-home-2018"); 
+    
+    var post_2021 = document.getElementById("post-year-2021");
+    var post_2020 = document.getElementById("post-year-2020");
+    var post_2019 = document.getElementById("post-year-2019");
+    var post_2018 = document.getElementById("post-year-2018");
+     switch (y){
+        case "2021":
+        
+          post_2021.classList.remove("hidden");
+          post_2020.classList.add("hidden");
+          post_2019.classList.add("hidden");
+          post_2018.classList.add("hidden");
+          break;
+        case "2020":
+       
+          post_2021.classList.add("hidden");
+          post_2020.classList.remove("hidden");
+          post_2019.classList.add("hidden");
+          post_2018.classList.add("hidden");
+          break;
+        case "2019":
+        
+          post_2021.classList.add("hidden");
+          post_2020.classList.add("hidden");
+          post_2019.classList.remove("hidden");
+          post_2018.classList.add("hidden");
+          break;
+        case "2018":
+        
+           post_2021.classList.add("hidden");
+          post_2020.classList.add("hidden");
+          post_2019.classList.add("hidden");
+          post_2018.classList.remove("hidden");
+          break;
+    
+        default:
+          break;
+      }
+}    
