@@ -503,6 +503,11 @@ function selectPostHome(y){
     var post_2018 = document.getElementById("post-year-2018");
      switch (y){
         case "2021":
+
+          select_post_2021.classList.add("font-karma-bold");
+          select_post_2020.classList.remove("font-karma-bold");
+          select_post_2019.classList.remove("font-karma-bold");
+          select_post_2018.classList.remove("font-karma-bold");
         
           post_2021.classList.remove("hidden");
           post_2020.classList.add("hidden");
@@ -510,6 +515,11 @@ function selectPostHome(y){
           post_2018.classList.add("hidden");
           break;
         case "2020":
+
+          select_post_2021.classList.remove("font-karma-bold");
+          select_post_2020.classList.add("font-karma-bold");
+          select_post_2019.classList.remove("font-karma-bold");
+          select_post_2018.classList.remove("font-karma-bold");
        
           post_2021.classList.add("hidden");
           post_2020.classList.remove("hidden");
@@ -517,6 +527,10 @@ function selectPostHome(y){
           post_2018.classList.add("hidden");
           break;
         case "2019":
+          select_post_2021.classList.remove("font-karma-bold");
+          select_post_2020.classList.remove("font-karma-bold");
+          select_post_2019.classList.add("font-karma-bold");
+          select_post_2018.classList.remove("font-karma-bold");
         
           post_2021.classList.add("hidden");
           post_2020.classList.add("hidden");
@@ -524,8 +538,12 @@ function selectPostHome(y){
           post_2018.classList.add("hidden");
           break;
         case "2018":
-        
-           post_2021.classList.add("hidden");
+          select_post_2021.classList.remove("font-karma-bold");
+          select_post_2020.classList.remove("font-karma-bold");
+          select_post_2019.classList.remove("font-karma-bold");
+          select_post_2018.classList.add("font-karma-bold");
+
+          post_2021.classList.add("hidden");
           post_2020.classList.add("hidden");
           post_2019.classList.add("hidden");
           post_2018.classList.remove("hidden");
