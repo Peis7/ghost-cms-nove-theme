@@ -5,7 +5,11 @@ into the {body} of the default.hbs template --}}
 <div class="home main-content-area">
     {{> home/featured}}
     {{> home/narrarte tag="hash-narrarte-main"}}
-    {{> home/events-per-year}}
+   
+
+    <div class="owl-carousel owl-theme owl-carrousel-2021">
+        {{> home/events-per-year}}
+    </div>
     {{> home/puro-cuento tag="hash-home-main-cuento"}}
     {{> home/pago-consciente}}
     {{> home/main-post-viewer}}
