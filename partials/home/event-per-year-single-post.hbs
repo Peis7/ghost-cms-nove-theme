@@ -1,4 +1,4 @@
-{{#get "posts" limit="4"  filter="tags:{{tag}}"}}
+{{#get "posts" limit="all"  filter="tags:{{tag}}"}}
     {{#foreach posts visibility="all"}}
         <div class="{{post_class}} {{classes}} pb-28 even:pl-2 odd:pr-2 w-1/2 md:w-1/3 relative float-left md:p-4 md:last:hidden">
                 <div class="featured-image-wrap relative">
@@ -20,9 +20,9 @@
                                     <h2 class="title font-karma-bold text-sm xs:text-base l:text-xl text-primary-black s:text-base md:text-base pcs:text-xl">{{title}}</h2>
                             </div>
                             <div class="col-lg-6 excert">
-                                    <div class="excerpt excerpt-content">
-                                        <span class="font-karma-light text-xs xs:text-sm l:text-lg md:text-base pcs:text-lg">{{excerpt words="6"}}</span>
-                                    </div>
+                                <div class="excerpt excerpt-content">
+                                    <span class="font-karma-light text-xs xs:text-sm l:text-lg md:text-base pcs:text-lg">{{excerpt words="6"}}</span>
+                                </div>
                             </div>
                         </div>
                     </div>
