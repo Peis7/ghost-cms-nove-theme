@@ -1,25 +1,25 @@
 <header id="gh-head" class="gh-head {{#if @site.cover_image}}has-cover{{/if}} bg-white w-full pcs:w-4/5 md:m-auto z-50 border-b-2 border-fuchsia-600">
-        <div class="desktop gh-head-inner inner gh-container h-full md:pt-12 w-full md:block">
-            <div class="w-full bg-white hidden md:block">
-                {{> navmain}}
-                {{> navfixed}}
-            </div>
-           <div class="mobile w-full bg-white md:hidden">
-                <a class="cursor-pointer" href="{{@site.url}}">
-                    {{> icons/logowithtext width=90 height=58 class="m-2 p-1 l:w-36 l:h-24 l:ml-8 l:my-2"}}
-                </a>
-                <div class="block shadow-2xl w-full h-4/5 mobile-menu absolute left-full top-0">
-                    <div class="absolute z-50">
-                        <a class="cursor-pointer" href="{{@site.url}}">
-                            {{> icons/logowithtext width=90 height=58 class="m-2 p-1 l:w-36 l:h-24 l:ml-8 l:my-2"}}
-                        </a>
-                    </div>
-                    <div class="absolute mobile-menus-icon-container -left-8 l:-left-24 top-6 z-50">
-                        {{> icons/burguer width=20 height=20 class="menu-burguer l:w-12 l:h-16"}}
-                        {{> icons/close width=20 height=20 fill="#1F1F1F" class="menu-close hidden"}}
-                    </div>
-                    {{ navigation class="absolute bg-white h-full right-0 top-0 w-full" menu_item_classes="uppercase"}}
-                </div>  
-            </div>
-        </div>  
+    <div class="desktop gh-head-inner inner gh-container h-full md:pt-12 w-full md:block">
+        <div class="w-full bg-white hidden md:block">
+            {{> navmain}}
+            {{> navfixed}}
+        </div>
+        <div class="mobile w-full bg-white md:hidden">
+            <a class="cursor-pointer" href="{{@site.url}}">
+                {{> icons/logowithtext width=90 height=58 class="m-2 p-1 l:w-36 l:h-24 l:ml-8 l:my-2"}}
+            </a>
+            <div class="block shadow-2xl w-full h-4/5 mobile-menu absolute left-full top-0">
+                <div class="absolute z-50">
+                    <a class="cursor-pointer" href="{{@site.url}}">
+                        {{> icons/logowithtext width=90 height=58 class="m-2 p-1 l:w-36 l:h-24 l:ml-8 l:my-2"}}
+                    </a>
+                </div>
+                <div class="absolute mobile-menus-icon-container -left-8 l:-left-24 top-6 z-50">
+                    {{> icons/burguer width=20 height=20 class="menu-burguer l:w-12 l:h-16"}}
+                    {{> icons/close width=20 height=20 fill="#1F1F1F" class="menu-close hidden"}}
+                </div>
+                {{ navigation class="absolute bg-white h-full right-0 top-0 w-full" menu_item_classes="uppercase"}}
+            </div>  
+        </div>
+    </div>  
 </header>
