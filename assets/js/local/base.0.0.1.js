@@ -10,6 +10,7 @@ function handle_show_right_header(){
     }
     var header = jQuery("#gh-head")
     var header_menu = jQuery(".gh-head-menu")
+    var logo = jQuery(".gh-head-logo")
     var header_height = header_menu.height()
     var fixed_header_menu = jQuery(".fixed-gh-head-menu")
     var fixed_header_menu_logo = jQuery(".fixed-gh-head-menu .gh-head-brand")
@@ -29,6 +30,7 @@ function handle_show_right_header(){
                 // });
                 // fixed_header_menu_logo.removeClass('hidden')
 
+                header.addClass("scrolled");
                 
 
             }
@@ -45,7 +47,7 @@ function handle_show_right_header(){
                 // fixed_header_menu_logo.addClass("hidden")
                 // header.removeClass("left-0")
 
-
+                header.removeClass("scrolled");
             }
     })
 }
