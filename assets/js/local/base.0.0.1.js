@@ -30,7 +30,7 @@ function handle_show_right_header(){
                 // fixed_header_menu_logo.removeClass('hidden')
             }
             if (scroll_to_top == 0){
-                // header.removeClass("fixed")
+                header.removeClass("fixed")
                 // header.removeClass("pcs:w-full")
                 // jQuery('.site-content').css('margin-top',0)
                 // //fixed_header_menu.addClass("hidden")
