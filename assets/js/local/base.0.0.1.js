@@ -36,6 +36,7 @@ function handle_show_right_header(){
                 // header.removeClass("no-scrolled");
                 
                 logo.style.height =  "5rem";
+                logo.style.transition = "all 3s";
 
             }
             if (scroll_to_top == 0){
