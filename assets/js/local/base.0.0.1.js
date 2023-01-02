@@ -29,7 +29,7 @@ function handle_show_right_header(){
                 // });
                 // fixed_header_menu_logo.removeClass('hidden')
 
-                alert('Deslizar para abajo');
+                
 
             }
             if (scroll_to_top == 0){
