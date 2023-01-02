@@ -31,6 +31,8 @@ function handle_show_right_header(){
                 // fixed_header_menu_logo.removeClass('hidden')
 
                 header.addClass("scrolled");
+                header.removeClass("no-scrolled");
+                
                 
 
             }
@@ -46,7 +48,7 @@ function handle_show_right_header(){
                 // //});
                 // fixed_header_menu_logo.addClass("hidden")
                 // header.removeClass("left-0")
-
+                header.addClass("no-scrolled");
                 header.removeClass("scrolled");
             }
     })
