@@ -10,13 +10,11 @@ function handle_show_right_header(){
     }
     var header = jQuery("#gh-head")
     var header_menu = jQuery(".gh-head-menu")
-    var logo = document.getElementById("logo-narrate-with-text")
+    var logo = jQuery(".gh-head-logo")
     var header_height = header_menu.height()
     var fixed_header_menu = jQuery(".fixed-gh-head-menu")
     var fixed_header_menu_logo = jQuery(".fixed-gh-head-menu .gh-head-brand")
     var header_height = jQuery('#gh-head').first().height()
-
-     
     jQuery(window).scroll(function() {
             var scroll_to_top = jQuery(window).scrollTop()
             if (scroll_to_top > header_height && !fixed_header_menu.hasClass("shown")){
@@ -32,12 +30,8 @@ function handle_show_right_header(){
                 // });
                 // fixed_header_menu_logo.removeClass('hidden')
 
-                // header.addClass("scrolled");
-                // header.removeClass("no-scrolled");
-                
-                logo.style.height =  "5rem";
-                logo.style.transition = "all 3s";
-
+                header.addClass("scrolled");
+                header.removeClass("no-scrolled");
             }
             if (scroll_to_top == 0){
                 // header.removeClass("fixed")
@@ -51,12 +45,9 @@ function handle_show_right_header(){
                 // //});
                 // fixed_header_menu_logo.addClass("hidden")
                 // header.removeClass("left-0")
-                // header.addClass("no-scrolled");
-                // header.removeClass("scrolled");
-
-                logo.style.height =  "auto";
+                header.addClass("no-scrolled");
+                header.removeClass("scrolled");
             }
-
     })
 }
 function generate_post_carrusels(){
