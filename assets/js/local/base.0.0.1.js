@@ -28,6 +28,9 @@ function handle_show_right_header(){
                 //     console.log("Shown done")
                 // });
                 // fixed_header_menu_logo.removeClass('hidden')
+
+                alert('Deslizar para abajo');
+
             }
             if (scroll_to_top == 0){
                 // header.removeClass("fixed")
@@ -41,6 +44,8 @@ function handle_show_right_header(){
                 // //});
                 // fixed_header_menu_logo.addClass("hidden")
                 // header.removeClass("left-0")
+
+
             }
     })
 }
