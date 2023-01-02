@@ -17,7 +17,7 @@ function handle_show_right_header(){
     jQuery(window).scroll(function() {
             var scroll_to_top = jQuery(window).scrollTop()
             if (scroll_to_top > header_height && !fixed_header_menu.hasClass("shown")){
-                // header.addClass('fixed')
+                header.addClass('fixed')
                 // header.addClass('left-0')
                 // header.addClass('pcs:w-full')
                 // header_menu.addClass('hidden')
