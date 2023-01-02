@@ -17,30 +17,30 @@ function handle_show_right_header(){
     jQuery(window).scroll(function() {
             var scroll_to_top = jQuery(window).scrollTop()
             if (scroll_to_top > header_height && !fixed_header_menu.hasClass("shown")){
-                header.addClass('fixed')
-                header.addClass('left-0')
-                header.addClass('pcs:w-full')
-                header_menu.addClass('hidden')
-                //fixed_header_menu.removeClass('hidden')
-                jQuery('.site-content').css('margin-top',header_height)
-                fixed_header_menu.addClass("shown")
-                fixed_header_menu.slideDown(300, function() {
-                    console.log("Shown done")
-                });
-                fixed_header_menu_logo.removeClass('hidden')
+                // header.addClass('fixed')
+                // header.addClass('left-0')
+                // header.addClass('pcs:w-full')
+                // header_menu.addClass('hidden')
+                // //fixed_header_menu.removeClass('hidden')
+                // jQuery('.site-content').css('margin-top',header_height)
+                // fixed_header_menu.addClass("shown")
+                // fixed_header_menu.slideDown(300, function() {
+                //     console.log("Shown done")
+                // });
+                // fixed_header_menu_logo.removeClass('hidden')
             }
             if (scroll_to_top == 0){
-                header.removeClass("fixed")
-                header.removeClass("pcs:w-full")
-                jQuery('.site-content').css('margin-top',0)
-                //fixed_header_menu.addClass("hidden")
-                //fixed_header_menu.slideUp( 500, function() {
-                header_menu.removeClass("hidden")
-                fixed_header_menu.removeClass("shown")
-                fixed_header_menu.hide()
-                //});
-                fixed_header_menu_logo.addClass("hidden")
-                header.removeClass("left-0")
+                // header.removeClass("fixed")
+                // header.removeClass("pcs:w-full")
+                // jQuery('.site-content').css('margin-top',0)
+                // //fixed_header_menu.addClass("hidden")
+                // //fixed_header_menu.slideUp( 500, function() {
+                // header_menu.removeClass("hidden")
+                // fixed_header_menu.removeClass("shown")
+                // fixed_header_menu.hide()
+                // //});
+                // fixed_header_menu_logo.addClass("hidden")
+                // header.removeClass("left-0")
             }
     })
 }
