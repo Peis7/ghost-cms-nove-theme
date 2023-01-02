@@ -15,43 +15,28 @@ function handle_show_right_header(){
     var fixed_header_menu = jQuery(".fixed-gh-head-menu")
     var fixed_header_menu_logo = jQuery(".fixed-gh-head-menu .gh-head-brand")
     var header_height = jQuery('#gh-head').first().height()
-    jQuery(window).scroll(function() {
-            var scroll_to_top = jQuery(window).scrollTop()
-            if (scroll_to_top > header_height && !fixed_header_menu.hasClass("shown")){
-                // header.addClass('fixed')
-                // header.addClass('left-0')
-                // header.addClass('pcs:w-full')
-                // header_menu.addClass('hidden')
-                // //fixed_header_menu.removeClass('hidden')
-                // jQuery('.site-content').css('margin-top',header_height)
-                // fixed_header_menu.addClass("shown")
-                // fixed_header_menu.slideDown(300, function() {
-                //     console.log("Shown done")
-                // });
-                // fixed_header_menu_logo.removeClass('hidden')
-
-                header.addClass("scrolled");
-                header.removeClass("no-scrolled");
-                
-                
-
-            }
-            if (scroll_to_top == 0){
-                // header.removeClass("fixed")
-                // header.removeClass("pcs:w-full")
-                // jQuery('.site-content').css('margin-top',0)
-                // //fixed_header_menu.addClass("hidden")
-                // //fixed_header_menu.slideUp( 500, function() {
-                // header_menu.removeClass("hidden")
-                // fixed_header_menu.removeClass("shown")
-                // fixed_header_menu.hide()
-                // //});
-                // fixed_header_menu_logo.addClass("hidden")
-                // header.removeClass("left-0")
-                header.addClass("no-scrolled");
-                header.removeClass("scrolled");
-            }
-    })
+    window.addEventListener('scroll', function() {
+        // @var int totalPageHeight
+        var totalPageHeight = document.body.offsetHeight; 
+        var heigh = window.innerHeight;
+    
+        // @var int scrollPoint
+        var scrollPoint = window.scrollY + window.innerHeight;
+        
+        if (scrollPoint == heigh){
+        // Top of window
+            header.addClass("no-scrolled");
+            header.removeClass("scrolled");
+        }else  if(scrollPoint >= totalPageHeight){
+        // Bottom of window
+            header.removeClass("no-scrolled");
+            header.addClass("scrolled");
+        } else {
+        // Middle of window
+            header.removeClass("no-scrolled");
+            header.addClass("scrolled");
+        }
+    });
 }
 function generate_post_carrusels(){
     jQuery.each([2021,2020,2019,2018], function( index, value ) {
