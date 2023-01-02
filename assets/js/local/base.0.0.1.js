@@ -35,7 +35,7 @@ function handle_show_right_header(){
                 // header.addClass("scrolled");
                 // header.removeClass("no-scrolled");
                 
-                logo.style.height =  "auto";
+                logo.style.height =  "5rem";
 
             }
             if (scroll_to_top == 0){
@@ -53,7 +53,7 @@ function handle_show_right_header(){
                 // header.addClass("no-scrolled");
                 // header.removeClass("scrolled");
 
-                logo.style.height =  "5rem";
+                logo.style.height =  "auto";
             }
 
     })
