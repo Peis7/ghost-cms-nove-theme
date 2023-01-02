@@ -8,35 +8,7 @@ function handle_show_right_header(){
         make_header_fix_on_mobiled()
         return
     }
-    var header = jQuery("#gh-head")
-    var header_menu = jQuery(".gh-head-menu")
-    var logo = jQuery(".gh-head-logo")
-    var header_height = header_menu.height()
-    var fixed_header_menu = jQuery(".fixed-gh-head-menu")
-    var fixed_header_menu_logo = jQuery(".fixed-gh-head-menu .gh-head-brand")
-    var header_height = jQuery('#gh-head').first().height()
-    window.addEventListener('scroll', function() {
-        // @var int totalPageHeight
-        var totalPageHeight = document.body.offsetHeight; 
-        var heigh = window.innerHeight;
-    
-        // @var int scrollPoint
-        var scrollPoint = window.scrollY + window.innerHeight;
-        
-        if (scrollPoint == heigh){
-        // Top of window
-            header.addClass("no-scrolled");
-            header.removeClass("scrolled");
-        }else  if(scrollPoint >= totalPageHeight){
-        // Bottom of window
-            header.removeClass("no-scrolled");
-            header.addClass("scrolled");
-        } else {
-        // Middle of window
-            header.removeClass("no-scrolled");
-            header.addClass("scrolled");
-        }
-    });
+   
 }
 function generate_post_carrusels(){
     jQuery.each([2021,2020,2019,2018], function( index, value ) {
